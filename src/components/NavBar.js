@@ -14,6 +14,7 @@ function NavBar({
 
   return (
     <Grid
+      pt={2}
       direction="row"
       justifyContent="center"
       alignItems="flexstart"

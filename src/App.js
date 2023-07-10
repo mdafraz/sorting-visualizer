@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import SortingVisualizer from "./components/SortingVisualizer";
 import NavBar from "./components/NavBar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { mergeSortWithSteps } from "./algorithms/MergeSort";
 import BubbleSort from "./algorithms/BubbleSort";
 import "./app.css";
@@ -18,6 +18,10 @@ function createRandomArray(length) {
 }
 
 function App() {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+  });
+
   const [Sortarr, setSortarr] = useState({
     array: createRandomArray(70),
   });
