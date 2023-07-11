@@ -89,7 +89,7 @@ function App() {
       const step = steps[i];
       setTimeout(() => {
         setSortarr(step);
-      }, i * 20);
+      }, i * 80);
     }
   };
 
