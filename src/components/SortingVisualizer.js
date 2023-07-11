@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 
 function SortingVisualizer({ Sortarr }) {
-  const { array: arr, blue, pivot } = Sortarr;
+  const { array: arr, blue, pivot, orange } = Sortarr;
 
   return (
     <Box
@@ -15,7 +15,9 @@ function SortingVisualizer({ Sortarr }) {
           mx={0.15}
           height={h}
           sx={{
-            background: pivot?.includes(idx)
+            background: orange?.includes(idx)
+              ? "#F05454"
+              : pivot?.includes(idx)
               ? "#F05454"
               : !blue?.includes(idx)
               ? "#A7D2CB"

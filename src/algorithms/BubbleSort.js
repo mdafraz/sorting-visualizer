@@ -13,7 +13,7 @@ const BubbleSort = (arr) => {
       if (arr[j] > arr[j + 1]) {
         swap(arr, j, j + 1);
       }
-      steps.push({ array: [...arr], blue: [j, j + 1] });
+      steps.push({ array: [...arr], blue: [j], orange: [j + 1] });
     }
   }
 
